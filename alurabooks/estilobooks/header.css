@@ -1,0 +1,60 @@
+.cabecalho__menu-haburguer{
+    width: 24px;
+    height: 24px;
+    background-image: url("../imagensalurabooks/Menu.svg");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cabecalho{
+   background-color: var(--branco);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: relative;
+}
+
+.conteiner{
+    display: flex;
+    align-items: center;
+}
+
+.conteiner__imagem{
+padding: 1em;
+}
+
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+    font-family: var(--fonte-principal);
+}
+
+.conteiner__botao:checked ~ .lista-menu{
+    display: block;
+}
+
+.lista-menu__titulo,.lista-menu__itens{
+    padding: 1em;
+    background-color: var(--branco);
+    
+}
+
+.lista-menu__titulo{
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista-menu__itens a{
+    background:var(--azul-diferente);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: none;
+}
+
+.conteiner__botao{
+    display: none;
+}
